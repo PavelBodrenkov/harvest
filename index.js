@@ -82,8 +82,7 @@ function submitForm (e) {
               elem.classList.add('_error')
               hasError=true
               span.style.display ='block'
-              span.textContent = '*Не все обязательные поля заполнены'
-             
+              span.textContent = '*Не все обязательные поля заполнены'  
           } else {
               elem.classList.remove('_error')   
           }
@@ -120,20 +119,27 @@ form.addEventListener('submit', (e) => {
   }
 })
 
-
-function checkMediaQuery() {
-  if (window.innerWidth < 500) {
-    console.log('Media Query Matched!')
+input.forEach(item => {
+  item.onblur = () => {
+    if(item.value !== "") {
+      item.classList.remove('_error')
+    }
   }
-}
-window.addEventListener('resize', checkMediaQuery);
+})
 
-const mediaQuery = window.matchMedia('(max-width: 500px)')
-function handleTabletChange(e) {
-  if (e.matches) {
-    console.log('Media Query Matched111!')
-    parallaxMouse.remove()
-  }
-}
-mediaQuery.addListener(handleTabletChange)
-handleTabletChange(mediaQuery)
+// function checkMediaQuery() {
+//   if (window.innerWidth < 500) {
+//     console.log('Media Query Matched!')
+//   }
+// }
+// window.addEventListener('resize', checkMediaQuery);
+
+// const mediaQuery = window.matchMedia('(max-width: 500px)')
+// function handleTabletChange(e) {
+//   if (e.matches) {
+//     console.log('Media Query Matched111!')
+//     parallaxMouse.remove()
+//   }
+// }
+// mediaQuery.addListener(handleTabletChange)
+// handleTabletChange(mediaQuery)

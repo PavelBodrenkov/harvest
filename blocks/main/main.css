@@ -19,16 +19,16 @@
 position: relative;
     /* background: url('./../../images/Rectangle519.svg'); */
     overflow: hidden;
-    -webkit-clip-path: polygon(39% 0%, 116% 17%, 103% 80%, 49% 99%, 0% 80%, 0% 21%);
-clip-path: polygon(39% 0%, 116% 17%, 103% 80%, 49% 99%, 0% 80%, 0% 21%);
+    -webkit-clip-path: polygon(36.5% 0%, 100% 26%, 229% 23%, 57% 99.5%, -1% 80.5%, 0% 26%);
+clip-path: polygon(36.5% 0%, 100% 26%, 229% 23%, 57% 99.5%, -1% 80.5%, 0% 26%)
     
 }
 
 .words {
-    width:74%;
+    width:75%;
     height: auto;
     position: absolute;
-    top: 45%;
+    top: 46.5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

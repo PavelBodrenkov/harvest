@@ -79,9 +79,14 @@
     content: "";
     position: absolute;
     top:-50px;
-    left: 680px;
+    left:684px;
     font-size: 23px;
     color: rgb(238, 238, 238);
+    
+}
+
+.popup__input[required] + label:last-of-type::before {
+    top:-58px;
 }
   
 .popup__input[required]:not(:focus):valid + label:before {
@@ -259,7 +264,7 @@
     .popup__input[required] + label:before {
         content: "";
         position: absolute;
-        top:-55px;
+        top:-52px;
         left: 500px;
         font-size: 23px;
         color: rgb(238, 238, 238);
@@ -324,6 +329,9 @@
     .popup__done-subtitle {
         width:250px;
         text-align: center;
+    }
+    .popup__input[required] + label:last-of-type::before {
+        top:-50px;
     }
 }
 
