@@ -76,6 +76,12 @@ position: relative;
         max-height: 427px;
     }
 }
+@media screen and (max-width: 1024px) {
+    #end {
+        display: none;
+}
+}
+
 
 @media screen and (max-width: 1024px) {
     .header__content {
