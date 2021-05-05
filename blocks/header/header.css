@@ -9,12 +9,7 @@ position: relative;
     align-items: center;
     height: 759px;
 }
-.img-header {
-    display: none;
-}
-.img-logo1 {
-    display: none;
-}
+
 .berries {
     position: absolute;
     width: 100%;
@@ -84,32 +79,38 @@ position: relative;
         max-height: 427px;
     }
 }
-/* @media screen and (max-width: 1280px) {
-    .img-logo {
-       display: none;
+@media screen and (max-width: 1280px) {
+    .p1{
+        top:0px;
+        left:0px;
+        z-index: 2;
     }
-    .img-header {
-        display: initial;
+    .p2{
+        z-index: 6;
+        top:0px;
+     }
+    .p3 {
+        animation: opacity 6s forwards;
+        z-index: 5;
+    }
+    .p4 {
+        z-index: 4;
+    }
+    .p5{
+        top:0px;
+        left:0px;
+        z-index: 1;
+    }
+    .p6 {
+        z-index: 3;
+        top:0px;
         width: 100%;
-        height: auto;        
     }
-    .header__content {
-        display: none;
+    .p7{
+        top:0px;
+        z-index: 4;
     }
-    .header {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-        }
-    .img-logo1 {
-        max-width:625px;
-        max-height: 427px;
-        position: absolute;
-        display: initial;
-    }
-} */
+}
 
 
 @media screen and (max-width: 1024px) {

@@ -119,3 +119,21 @@ form.addEventListener('submit', (e) => {
       popupDoneContainer.classList.add('popup__done__container_visible')
   }
 })
+
+
+function checkMediaQuery() {
+  if (window.innerWidth < 500) {
+    console.log('Media Query Matched!')
+  }
+}
+window.addEventListener('resize', checkMediaQuery);
+
+const mediaQuery = window.matchMedia('(max-width: 500px)')
+function handleTabletChange(e) {
+  if (e.matches) {
+    console.log('Media Query Matched111!')
+    parallaxMouse.remove()
+  }
+}
+mediaQuery.addListener(handleTabletChange)
+handleTabletChange(mediaQuery)
