@@ -25,11 +25,11 @@ clip-path: polygon(36.5% 0%, 100% 26%, 229% 23%, 57% 99.5%, -1% 80.5%, 0% 26%)
 }
 
 .words {
-    width:75%;
+    width: 74%;
     height: auto;
     position: absolute;
-    top: 46.5%;
-    left: 50%;
+    top: 46.3%;
+    left: 49.9%;
     transform: translate(-50%, -50%);
 }
 
