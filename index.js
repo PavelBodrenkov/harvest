@@ -9,7 +9,7 @@ const popupDoneContainer = document.querySelector('.popup__done__container')
 
 
 parallaxMouse({ elements: '.p1', moveFactor: 5, wrap: '.header',perspective: '150px'})
-parallaxMouse({ elements: '.p2', moveFactor: -30, wrap: '.header', perspective: '200px'})
+parallaxMouse({ elements: '.p2', moveFactor: 2, wrap: '.header'})
 parallaxMouse({ elements: '.p6', moveFactor: 20, wrap: '.header', perspective: '200px'})
 // parallaxMouse({ elements: '.p4', moveFactor: 10, wrap: '.header'})
 parallaxMouse({ elements: '.p7', moveFactor: -25, wrap: '.header', perspective: '100px'})
@@ -137,37 +137,11 @@ document.addEventListener('input', () => {
   dataCheck()
 })
 
+window.addEventListener('screen', () => {
+  console.log("Screen width is " + screen.width)
+})
 
+if(screen.width < 1800) {
+  this.parallaxMouse.remove()
+}
 
-
- 
-
-      // item.onblur = () => {
-      //   const message = input.nextSibling.nextElementSibling;
-      //   message.style.display = input.value ? 'none' : 'block';
-      // if(item.value !== "") {
-      //   item.classList.remove('_error')
-      //   hasError=true
-      // }
-    
-      // }
-  
-
-
-
-// function checkMediaQuery() {
-//   if (window.innerWidth < 500) {
-//     console.log('Media Query Matched!')
-//   }
-// }
-// window.addEventListener('resize', checkMediaQuery);
-
-// const mediaQuery = window.matchMedia('(max-width: 500px)')
-// function handleTabletChange(e) {
-//   if (e.matches) {
-//     console.log('Media Query Matched111!')
-//     parallaxMouse.remove()
-//   }
-// }
-// mediaQuery.addListener(handleTabletChange)
-// handleTabletChange(mediaQuery)
