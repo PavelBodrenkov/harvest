@@ -119,13 +119,41 @@ form.addEventListener('submit', (e) => {
   }
 })
 
-input.forEach(item => {
-  item.onblur = () => {
-    if(item.value !== "") {
-      item.classList.remove('_error')
+function dataCheck() {
+   let name
+   let error
+  for (let i = 0; i < input.length; i++) {
+    name = input[i].value;
+    error = input[i]
+        if(name !=='') {
+          span.textContent = ''
+          error.classList.remove('_error')
+    } else {
+      span.textContent = '*Не все обязательные поля заполнены'
     }
   }
+};
+document.addEventListener('input', () => {
+  dataCheck()
 })
+
+
+
+
+ 
+
+      // item.onblur = () => {
+      //   const message = input.nextSibling.nextElementSibling;
+      //   message.style.display = input.value ? 'none' : 'block';
+      // if(item.value !== "") {
+      //   item.classList.remove('_error')
+      //   hasError=true
+      // }
+    
+      // }
+  
+
+
 
 // function checkMediaQuery() {
 //   if (window.innerWidth < 500) {
