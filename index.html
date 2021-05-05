@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        
+        <div class="header__content">
+            <img src="images/berries-notblur.svg" class="berries p1">
+            <img src="images/berries-bigblur.svg" class="berries p2">
+            <img src="images/vegatables-freez.svg" class="berries p3">
+            <img src="images/vegatables.svg" class="berries p4">
+            <img src="images/berries-smallblur.svg" class="berries p5">
+            <img src="images/vegatables-totfreez.svg" class="berries p6">
+            <img src="images/leaves.svg" class="berries p7">
+            <div class="header__container">
+                <img class="img-logo" src="images/logo.svg">
+            </div>
+        </div>
+        <img class="img-logo1" src="images/logo.svg">
+        <img class="img-header" src="images/header1280.svg">
+    </header>
+    <main class="main">
+        <section>
+            <img class="img-main" src="images/mainbg.svg">
+            <img class="img360"src="./images/mainbg360.svg">
+        </section>
+        <section class="swiper container">
+                <h2 class="swiper__title">Магазины - ритейлеры</h2>
+                <div class="not-swiper">
+                    <ul class="swiper__lists">
+                        <li class="swiper__list"><img class="swiper__chain" src="images/perek.svg" alt="Перекресток"></li>
+                        <li class="swiper__list"><img class="swiper__chain" src="images/okey.svg" alt="Окей"></li>
+                        <li class="swiper__list"><img class="swiper__chain" src="images/diksy.png" alt="Дикси"></li>
+                        <li class="swiper__list"><img class="swiper__chain" src="images/verny.png" alt="Верный"></li>
+                        <li class="swiper__list"><img class="swiper__chain" src="images/pyaterka.png" alt="Пятерочка"></li>
+                        <li class="swiper__list"><img class="swiper__chain" src="images/auchan.svg" alt="Ашан"></li>
+                        <li class="swiper__list"><img class="swiper__chain" src="images/spar.svg" alt="Спар"></li>
+                    </ul>
+                </div>
+                <div class="container-button">
+                    <div class="swiper-object">
+                        <div class="slider__left"></div>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img class="swiper__chain" src="images/perek.svg" alt="Перекресток"></div>
+                                <div class="swiper-slide"><img class="swiper__chain" src="images/okey.svg" alt="Окей"></div>
+                                <div class="swiper-slide"><img class="swiper__chain" src="images/diksy.png" alt="Дикси"></div>
+                                <div class="swiper-slide"><img class="swiper__chain" src="images/verny.png" alt="Верный"></div>
+                                <div class="swiper-slide"><img class="swiper__chain" src="images/pyaterka.png" alt="Пятерочка"></div>
+                                <div class="swiper-slide"><img class="swiper__chain" src="images/auchan.svg" alt="Ашан"></div>
+                                <div class="swiper-slide"><img class="swiper__chain" src="images/spar.svg" alt="Спар"></div>
+                            </div>
+                        </div>
+                        <div class="slider__right"></div>
+                    </div>
+                    <div class="swiper-pagination pagination__position"></div>
+                </div>
+        </section>
+        <section class="technologies container">
+            <div class="technologies__content">
+                <p class="technologies__subtitle">
+                    Благодаря применению технологии шоковой заморозки<br>
+                    в наших продуктах нет льда. Однако, он может появится<br>
+                    при нарушении условий транспортировки или хранения в магазинах.
+                </p>
+                <h2 class="technologies__title">Если найдете хоть льдинку в пакете — пишите нам.</h2>
+                <p class="technologies__subtitle">
+                    Мы проверим логистическую цепочку и сделаем все,<br>
+                    чтобы наша продукция доходила до Вашего стола в первозданном виде!
+                </p>
+            </div>
+        </section>
+        <section class="button-popup">
+            <div class="container-position container">
+                <input type="button" class="buttop__open">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content container-footer">
+            <div class="logo__footer"></div>
+            <div>
+                <ul class="footer__lists">
+                    <li class="footer__list">ООО «ИМПАЙС» <br>Офис в Санкт-Петербурге: <br>+7 812-677-00-10</li>
+                    <li class="footer__list">Офис в Москве: +7 495-741-13-04<br></li>
+                    <li class="footer__list"><a class="footer__link" href="http://www.impice.ru" target="_blank">www.impice.ru</a></li>
+                    <li class="footer__list tp">msk@impice.ru</li>
+                    <li class="footer__list">ООО «АгроТрейд»:<br> +7 812-244-37-27</li>
+                    <li class="footer__list"><a class="footer__link" href="http://www.agro-trd.ru" target="_blank">www.agro-trd.ru</a></li>
+                    <li class="footer__list">roman@agro-trd.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="popup">
+        <div class="popup__container">
+            <form class="form" novalidate>
+                <h3 class="popup__title">Напишите нам</h3>
+                <input class="popup__input _req" name="name" type="text" placeholder="Имя*" value="" required>
+                <label for="before"></label>
+                <input class="popup__input _req" name="address" type="text" placeholder="Адрес магазина*" value="" required>
+                <label for="before"></label>
+                <input class="popup__input _req" name="theme" type="text" placeholder="Тема*" value="" required>
+                <label for="before"></label>
+                <textarea class="popup__text" name="message" placeholder="Введите сообщение" value=""></textarea>
+                <div class="button-wrapper">
+                    <span class="span"></span>
+                    <div class="download-file">
+                        <label>
+                            <input class="popup__file" name="file" type="file" multiple>
+                        </label>
+                    </div>    
+                    <button class="popup__button-send" type="submit">Отправить</button>
+                </div>
+            </form>
+            <div class="popup__button-close"></div>
+            <div class="popup__done__container">
+                <div class="popup__done"></div>
+                <p class="popup__done-subtitle">Спасибо за обращение</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/parallax-mouse@1.0.1/dist/parallax-mouse.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

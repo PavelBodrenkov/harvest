@@ -1,0 +1,110 @@
+.container-button {
+    display: none;
+}
+
+@media screen and (max-width: 1267px) {
+    .container-button {
+        display:flex;
+        flex-direction: column-reverse;
+        padding: 45px 0 65px 0;
+        box-sizing: border-box;
+        align-items: center;
+        position: relative;
+    }
+
+    .container-button::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: #D7D7D7;
+        border-radius: 5px;
+        height: 3px;
+    }
+     .swiper-slide {
+        margin-right:0;
+      } 
+      
+      .swiper-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+      .swiper-container {
+        max-width:890px;
+        margin: 0 auto;
+
+      }
+
+      .slider__left {
+        background: url('../../images/left.svg') center no-repeat;
+        width: 25px;
+        height: 20px;
+        background-size: contain;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+    
+    .slider__right {
+        background: url('../../images/right.svg') center no-repeat;
+        width: 25px;
+        height: 20px;
+        background-size: contain;
+        cursor: pointer;
+        margin-left: 0px;
+        text-align: end;
+    } 
+    .swiper-container {
+        width: 89%;
+        height: 100%;
+        position: relative;
+        display: flex;
+    }
+    .swiper-object {
+        display: flex;
+        align-items: center;
+    }
+    .pagination__position {
+        position: absolute;
+        bottom: 31px;
+    }
+    .swiper-pagination-bullet {
+        background: green;
+        margin-left:10px;
+    }
+    .swiper-pagination-bullet:nth-last-child() {
+        margin-left:0;
+    }
+
+    
+}
+@media screen and (max-width: 991px) {
+    .swiper-container {
+        max-width: 600px;
+        
+      }
+}
+@media screen and (max-width: 652px) {
+    .swiper-container {
+        max-width: 450px;
+      }
+      .slider__left {
+          display: none;
+      }
+      .slider__right{
+          display: none;
+      }
+}
+@media screen and (max-width: 652px) {
+    .swiper-container {
+        max-width: 350px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .swiper-container {
+        max-width: 350px;
+    }
+    .container-button {  
+        padding: 28px 0 79px 0;
+    }
+}
+

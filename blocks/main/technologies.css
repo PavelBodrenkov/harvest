@@ -1,0 +1,102 @@
+.technologies__subtitle {
+    font-size: 25px;
+    text-align: center;
+    margin:0;
+    font-family: 'Roboto Condensed Regular', 'Arial', 'Helvetica', sans-serif;
+}
+
+.technologies__title {
+    font-size: 42px;
+    text-align: center;
+    margin:50px 0 15px 0;
+    font-family: 'Roboto Condensed Regular', 'Arial', 'Helvetica', sans-serif;
+}
+
+.technologies__content {
+    padding: 55px 0 55px 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 1270px;
+    margin: 0 auto;
+}
+
+.technologies__content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #D7D7D7;
+    border-radius: 5px;
+    height: 3px;
+}
+
+@media screen and (max-width: 1440px) {
+    .technologies__content {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1267px) {
+    .technologies__content {
+        width: 930px;
+    }
+}
+@media screen and (max-width: 999px) {
+    .technologies__content {
+        max-width: 700px;
+    }
+}
+@media screen and (max-width: 703px) {
+    .technologies__content {
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 652px) {
+    .technologies__content {
+        max-width: 500px;
+    }
+    .technologies__title {
+        font-size: 35px;
+        text-align: center;
+        margin:40px 0 15px 0;
+    }
+    .technologies__subtitle {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 504px) {
+    .technologies__content {
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .technologies__content {
+        max-width: 320px;
+    }
+    .technologies__title {
+        font-size: 30px;
+        text-align: center;
+        margin:35px 0 15px 0;
+    }
+    .technologies__subtitle {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .technologies__title {
+        font-size: 18px;
+        text-align: center;
+        margin:20px auto 6px auto;
+        width:320px;
+    }
+    .technologies__subtitle {
+        font-size: 14px;
+    }
+}
+/* @media screen and (min-width:320px) and (max-width: 360px) {
+    .technologies__content {
+        max-width: 200px;
+    }
+} */
+
+
