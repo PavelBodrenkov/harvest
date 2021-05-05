@@ -8,10 +8,19 @@
 .img-main {
     width:100%;
     height: auto;
+    
 }
 
 .img360 {
     display: none;
+}
+
+.riktangle {
+    /* background: url('./../../images/Rectangle519.svg'); */
+    overflow: hidden;
+    -webkit-clip-path: polygon(39% 0%, 116% 25%, 103% 80%, 49% 99%, 0% 80%, 0% 21%);
+clip-path: polygon(39% 0%, 116% 25%, 103% 80%, 49% 99%, 0% 80%, 0% 21%);
+    
 }
 
 @media screen and (max-width: 1828px) {

@@ -50,6 +50,10 @@
     height: 6px;
 }
 
+.tp {
+    margin-bottom:7px;
+}
+
 @media screen and (max-width:1440px) {
     .container-footer {
         max-width: calc(100% - 135px *2);    
@@ -71,6 +75,9 @@
         padding: 25px 0 25px 0;
         font-size: 12px;
     }
+    .tp {
+        margin-bottom:5px;
+    }
     
 }
 @media screen and (max-width:501px) {
@@ -89,9 +96,6 @@
     }
     .footer__list br {
         display: initial;
-    }
-    .tp {
-        margin-bottom:5px;
     }
     
 }
