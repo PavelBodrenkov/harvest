@@ -10,23 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
-    <script type="text/javascript">
-        {
-        if (screen.width > 1280) document.write ('<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/parallax-mouse@1.0.1/dist/parallax-mouse.min.js"></sc' + 'ript>');
-        }
-        </script>
 </head>
 <body>
     <header class="header">
-        
         <div class="header__content">
-            <!-- <img src="images/berries-notblur.svg" class="berries p1"> -->
+            <img src="images/berries-notblur.svg" class="berries p1">
             <img src="images/berries-bigblur.svg" class="berries p2">
-            <!-- <img src="images/vegatables-freez.svg" class="berries p3">
-            <img src="images/vegatables.svg" class="berries p4">
-            <img src="images/berries-smallblur.svg" class="berries p5">
+            <img src="images/vegatables-freez.png" class="berries p3">
+            <img src="images/vegatables.png" class="berries p4">
+            <img src="images/berries-smallblur.svg" class="berries p5"> 
             <img src="images/vegatables-totfreez.svg" class="berries p6">
-            <img src="images/leaves.svg" class="berries p7"> -->
+            <img src="images/leaves.svg" class="berries p7"> 
+            <img src="images/leaves-blue.svg" class="berries p8">
             <div class="header__container">
                 <img class="img-logo" src="images/logo.svg">
             </div>
@@ -39,8 +34,6 @@
                 <img class="words" src="images/words.svg">
                 <video class="img-main" src="./images/freezloop.mp4" autoplay muted loop></video>
             </div>
-            
-            <!-- <img class="img-main" src="images/mainbg.svg"> -->
             <img class="img360"src="./images/mainbg360.svg">
         </section>
         <section class="swiper container">
@@ -113,13 +106,13 @@
     </footer>
     <div class="popup">
         <div class="popup__container">
-            <form class="form" novalidate>
+            <form class="form" name="form" novalidate>
                 <h3 class="popup__title">Напишите нам</h3>
                 <input class="popup__input _req" name="name" type="text" placeholder="Имя*" value="" required>
                 <label for="before"></label>
                 <input class="popup__input _req" name="address" type="text" placeholder="Адрес магазина*" value="" required>
                 <label for="before"></label>
-                <input class="popup__input _req" name="theme" type="text" placeholder="Тема*" value="" required>
+                <input class="popup__input" name="theme" type="text" placeholder="Тема" value="">
                 <label for="before"></label>
                 <textarea class="popup__text" name="message" placeholder="Введите сообщение" value=""></textarea>
                 <div class="button-wrapper">
@@ -139,7 +132,8 @@
             </div>
         </div>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/parallax-mouse@1.0.1/dist/parallax-mouse.min.js"></script> -->
+ 
+    <script src="https://cdn.jsdelivr.net/npm/parallax-mouse@1.0.1/dist/parallax-mouse.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>

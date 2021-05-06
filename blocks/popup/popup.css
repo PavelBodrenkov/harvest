@@ -63,13 +63,14 @@
     font-size: 16px;
     font-family: 'Roboto','Arial', sans-serif;
    position: relative;
+   
 }
 
 .popup__input:last-of-type {
     margin-bottom:20px;
 }
 
-.popup__input[required] + label {
+/* .popup__input[required] + label {
     position: relative;
     display: inline-block;
     vertical-align: middle;
@@ -102,6 +103,16 @@
 
 .label:last-of-type {
     height:20px;
+} */
+
+.correctly {
+    background: url('./../../images/okinput.svg') center no-repeat;
+    width:20px;
+    height: 20px;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+    background-position:685px;
 }
 
 .popup__input:focus {
@@ -269,9 +280,12 @@
         font-size: 23px;
         color: rgb(238, 238, 238);
     }
+    .correctly{
+        background-position:495px;
+    }
 }    
    
-@media screen and (max-width:420px) {
+@media screen and (max-width:608px) {
     .popup__container {
         max-width: 320px;
         width: 100%;
@@ -308,6 +322,7 @@
 
     .popup__button-send {
         order: 2;
+        margin-left: 0;
     }
     .download-file {
         order: 3;
@@ -318,6 +333,7 @@
     .popup__input {
     min-height: 40px;
     }
+
     .popup__input[required] + label:before {
         content: "";
         position: absolute;
@@ -332,6 +348,9 @@
     }
     .popup__input[required] + label:last-of-type::before {
         top:-50px;
+    }
+    .correctly{
+        background-position:243px;
     }
 }
 

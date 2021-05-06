@@ -6,15 +6,16 @@ const input = document.querySelectorAll('.popup__input');
 const form = document.querySelector('.form');
 const span = document.querySelector('.span')
 const popupDoneContainer = document.querySelector('.popup__done__container')
+const req = document.querySelectorAll('._req')
 
-
-parallaxMouse({ elements: '.p1', moveFactor: 5, wrap: '.header',perspective: '150px'})
-parallaxMouse({ elements: '.p2', moveFactor: 2, wrap: '.header'})
-parallaxMouse({ elements: '.p6', moveFactor: 20, wrap: '.header', perspective: '200px'})
-// parallaxMouse({ elements: '.p4', moveFactor: 10, wrap: '.header'})
-parallaxMouse({ elements: '.p7', moveFactor: -25, wrap: '.header', perspective: '100px'})
-parallaxMouse({ elements: '.p5', moveFactor: 30, wrap: '.header', perspective: '100px'})
-parallaxMouse({ elements: '.p8', moveFactor: -10, wrap: '.header'})
+if (screen.width > 1280) {
+  parallaxMouse({ elements: '.p1', moveFactor: 1, wrap: '.header',perspective: '150px'})
+  parallaxMouse({ elements: '.p2', moveFactor: -2, wrap: '.header'})
+  parallaxMouse({ elements: '.p6', moveFactor: 3, wrap: '.header', perspective: '200px'})
+  parallaxMouse({ elements: '.p7', moveFactor: -4, wrap: '.header', perspective: '300px'})
+  parallaxMouse({ elements: '.p5', moveFactor: 5, wrap: '.header', perspective: '100px'})
+  parallaxMouse({ elements: '.p8', moveFactor: -6, wrap: '.header'})
+}
 
 
 var swiper = new Swiper(".swiper-container", {
@@ -50,7 +51,8 @@ var swiper = new Swiper(".swiper-container", {
 function openPopup () {
   popup.classList.add('popup__opened')
   input.forEach(item => {
-      item.classList.remove('_error')   
+      item.classList.remove('_error')
+      item.classList.remove('correctly')   
   })
 }
 
@@ -76,20 +78,34 @@ function closeEsc (e) {
 function submitForm (e) {
   e.preventDefault()
   let hasError = false
-  for( let elem of form.elements) {
-      if(elem.classList.contains('_req')) {
-          if(elem.value === "") {
-              elem.classList.add('_error')
-              hasError=true
-              span.style.display ='block'
-              span.textContent = '*Не все обязательные поля заполнены'  
-          } else {
-              elem.classList.remove('_error')   
-          }
-      }       
-  }
+   req.forEach(item => {
+    if(item.value === "") {
+      span.style.display ='block'
+      span.textContent = '*Не все обязательные поля заполнены'
+      hasError=true
+      item.classList.add('_error')
+    } 
+  })
+  
   return hasError    
 }
+
+function dataCheck() {
+  let name
+  let error
+ for (let i = 0; i < input.length; i++) {
+   name = input[i].value;
+   error = input[i]
+       if(name !=='') {
+         span.textContent = ''
+         error.classList.remove('_error')
+         error.classList.add('correctly')
+   } else {
+     span.textContent = '*Не все обязательные поля заполнены'
+     error.classList.remove('correctly')
+   }
+ }
+};
 
 closeButtonPopup.addEventListener('click', () => {
   closePopup()
@@ -104,10 +120,14 @@ openButton.addEventListener('click', () => {
 
 document.addEventListener('click', (e) => {
   closeOverlay(e)
+  popupDoneContainer.classList.remove('popup__done__container_visible')
+  form.style.opacity = '1'
 })
 
 document.addEventListener('keydown', (e) => {
   closeEsc(e)
+  popupDoneContainer.classList.remove('popup__done__container_visible')
+  form.style.opacity = '1'
 })
 
 form.addEventListener('submit', (e) => {
@@ -119,29 +139,8 @@ form.addEventListener('submit', (e) => {
   }
 })
 
-function dataCheck() {
-   let name
-   let error
-  for (let i = 0; i < input.length; i++) {
-    name = input[i].value;
-    error = input[i]
-        if(name !=='') {
-          span.textContent = ''
-          error.classList.remove('_error')
-    } else {
-      span.textContent = '*Не все обязательные поля заполнены'
-    }
-  }
-};
 document.addEventListener('input', () => {
   dataCheck()
 })
 
-window.addEventListener('screen', () => {
-  console.log("Screen width is " + screen.width)
-})
-
-if(screen.width < 1800) {
-  this.parallaxMouse.remove()
-}
 
