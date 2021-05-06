@@ -38,6 +38,7 @@ position: relative;
     top:-70px;
     z-index: 6;
     overflow-x: hidden;
+    
  }
 .p3 {
     animation: opacity 6s forwards;
