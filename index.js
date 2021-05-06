@@ -9,11 +9,11 @@ const popupDoneContainer = document.querySelector('.popup__done__container')
 const req = document.querySelectorAll('._req')
 
 if (screen.width > 1280) {
-  parallaxMouse({ elements: '.p1', moveFactor: 1, wrap: '.header',perspective: '150px'})
+  parallaxMouse({ elements: '.p1', moveFactor: 1, wrap: '.header'})
   parallaxMouse({ elements: '.p2', moveFactor: -2, wrap: '.header'})
-  parallaxMouse({ elements: '.p6', moveFactor: 3, wrap: '.header', perspective: '200px'})
-  parallaxMouse({ elements: '.p7', moveFactor: -4, wrap: '.header', perspective: '300px'})
-  parallaxMouse({ elements: '.p5', moveFactor: 5, wrap: '.header', perspective: '100px'})
+  parallaxMouse({ elements: '.p6', moveFactor: 3, wrap: '.header'})
+  parallaxMouse({ elements: '.p7', moveFactor: -4, wrap: '.header'})
+  parallaxMouse({ elements: '.p5', moveFactor: 5, wrap: '.header'})
   parallaxMouse({ elements: '.p8', moveFactor: -6, wrap: '.header'})
 }
 
@@ -93,9 +93,9 @@ function submitForm (e) {
 function dataCheck() {
   let name
   let error
- for (let i = 0; i < input.length; i++) {
-   name = input[i].value;
-   error = input[i]
+ for (let i = 0; i < req.length; i++) {
+   name = req[i].value;
+   error = req[i]
        if(name !=='') {
          span.textContent = ''
          error.classList.remove('_error')

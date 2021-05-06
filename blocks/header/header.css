@@ -36,23 +36,23 @@ position: relative;
     width: 104%;
 }
 .p2{
-    top: -72px;
-    width: 98.3%;
-    right: 78px;
-   z-index: 5;
+    top: -75px;
+    width: 105.3%;
+    right: -64px;
+    z-index: 7;
  }
 .p3 {
     animation: opacity 6s forwards;
     z-index: 4;
-    top: -72px;
+    top: -109px;
     width: 97.3%;
-    right: 78px;
+    right: 68px;
 }
 .p4 {
-    z-index: 2;
-    top:-70px;
-    width:97%;
-    right:80px;
+    z-index: 3;
+    top: -105px;
+    width: 97%;
+    right: 69px;
 }
 .p5{
     top: 137px;
