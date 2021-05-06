@@ -7,7 +7,7 @@ const form = document.querySelector('.form');
 const span = document.querySelector('.span')
 const popupDoneContainer = document.querySelector('.popup__done__container')
 const req = document.querySelectorAll('._req')
-
+const reqtheme = document.querySelector('._reqtheme')
 // parallax
 if (screen.width > 1280) {
   parallaxMouse({ elements: '.p1', moveFactor: 1, wrap: '.header'})
@@ -113,6 +113,12 @@ function dataCheck() {
  }
 };
 
+function dataCheckTheme () {
+  if(reqtheme.value !== "") {
+    reqtheme.classList.add('correctly')
+  }
+}
+
 closeButtonPopup.addEventListener('click', () => {
   closePopup()
   popupDoneContainer.classList.remove('popup__done__container_visible')
@@ -147,6 +153,7 @@ form.addEventListener('submit', (e) => {
 
 document.addEventListener('input', () => {
   dataCheck()
+  dataCheckTheme()
 })
 
 
