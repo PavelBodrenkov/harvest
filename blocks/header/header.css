@@ -34,11 +34,10 @@ position: relative;
     z-index: 2;
 }
 .p2{
-
-    top:0px;
-    
+    width:110%;
+    top:-70px;
     z-index: 6;
-    
+    overflow-x: hidden;
  }
 .p3 {
     animation: opacity 6s forwards;
