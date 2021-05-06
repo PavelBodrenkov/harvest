@@ -8,6 +8,7 @@ const span = document.querySelector('.span')
 const popupDoneContainer = document.querySelector('.popup__done__container')
 const req = document.querySelectorAll('._req')
 
+// parallax
 if (screen.width > 1280) {
   parallaxMouse({ elements: '.p1', moveFactor: 1, wrap: '.header'})
   parallaxMouse({ elements: '.p2', moveFactor: -2, wrap: '.header'})
@@ -17,7 +18,7 @@ if (screen.width > 1280) {
   parallaxMouse({ elements: '.p8', moveFactor: -6, wrap: '.header'})
 }
 
-
+//swiper
 var swiper = new Swiper(".swiper-container", {
   slidesPerView: 5,
   spaceBetween: 5,
@@ -48,6 +49,7 @@ var swiper = new Swiper(".swiper-container", {
   },
 });
 
+//Открыть попап
 function openPopup () {
   popup.classList.add('popup__opened')
   input.forEach(item => {
@@ -56,11 +58,13 @@ function openPopup () {
   })
 }
 
+//Зкрыть попап
 function closePopup () {
   popup.classList.remove('popup__opened')
   form.reset()
 }
 
+//Закрыть попап по overlay
 function closeOverlay (e) {
   if(e.target.classList.contains('popup__opened')) {
       popup.classList.remove('popup__opened')
@@ -68,6 +72,7 @@ function closeOverlay (e) {
   }
 }
 
+//Закрыть попап по Esc
 function closeEsc (e) {
   if(e.keyCode === Esc) {
       popup.classList.remove('popup__opened')
@@ -75,6 +80,7 @@ function closeEsc (e) {
   }
 }
 
+//Отправить форму
 function submitForm (e) {
   e.preventDefault()
   let hasError = false
@@ -86,10 +92,10 @@ function submitForm (e) {
       item.classList.add('_error')
     } 
   })
-  
   return hasError    
 }
 
+//Проверка на пустой инпут
 function dataCheck() {
   let name
   let error

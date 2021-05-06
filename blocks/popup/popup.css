@@ -318,6 +318,8 @@
         margin-bottom: 24px;
         order: 2;
         width:300px;
+        font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+        font-size: 15px;
     }
 
     .popup__button-send {

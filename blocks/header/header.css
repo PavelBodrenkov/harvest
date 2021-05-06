@@ -155,7 +155,7 @@ position: relative;
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1208px) {
     .p1{
         top: -24px;
         left: -30px;
@@ -232,9 +232,9 @@ position: relative;
     }
 }
 
-@media screen and (max-width: 616px) {
+@media screen and (max-width: 626px) {
     .header__content {
-        height:300px;  
+        height:250px;  
     }
     .header__container {
         max-width: 300px;
@@ -257,7 +257,7 @@ position: relative;
 
 
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 414px) {
     .header__content {
         height:223px;  
     }
