@@ -107,11 +107,11 @@ function dataCheck() {
    name = req[i].value;
    error = req[i]
        if(name !=='') {
-         span.textContent = ''
+         span.style.display ='none'
          error.classList.remove('_error')
          error.classList.add('correctly')
    } else {
-     span.textContent = '*Не все обязательные поля заполнены'
+     span.style.display ='block'
      error.classList.remove('correctly')
    }
  }

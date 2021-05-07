@@ -11,6 +11,7 @@
     margin:50px 0 15px 0;
     font-family: 'Roboto Condensed Regular', 'Arial', 'Helvetica', sans-serif;
 }
+
 .technologies__title br {
     display: none;
 }
@@ -44,29 +45,33 @@
         width: 930px;
     }
 }
+
 @media screen and (max-width: 999px) {
     .technologies__content {
         max-width: 700px;
     }
 }
+
 @media screen and (max-width: 703px) {
     .technologies__content {
         max-width: 600px;
-       
     }
     .technologies__subtitle br {
         display: none;
     }
 }
+
 @media screen and (max-width: 652px) {
     .technologies__content {
         max-width: 500px;
     }
+
     .technologies__title {
         font-size: 35px;
         text-align: center;
         margin:40px 0 15px 0;
     }
+
     .technologies__subtitle {
         font-size: 20px;
     }
@@ -76,6 +81,7 @@
         max-width: 400px;
     }
 }
+
 @media screen and (max-width: 450px) {
     .technologies__content {
         max-width: 320px;
@@ -91,11 +97,11 @@
 }
 
 @media screen and (max-width: 414px) {
-    
     .technologies__content {
         max-width: 320px;
         padding: 30px 0 30px 0;
     }
+
     .technologies__title {
         font-size: 18px;
         text-align: center;
@@ -103,29 +109,26 @@
         line-height: 130%;
         letter-spacing: 0.02em;
     }
+
     .technologies__subtitle {
         font-size: 14px;
         line-height: 130%;
         letter-spacing: 0.02em;
     }
+    
     .technologies__title br {
         display: initial;
     }
 }
+
 @media screen and (max-width: 360px) {
     .technologies__title {
         font-size: 18px;
         text-align: center;
         width:320px;
     }
+
     .technologies__subtitle {
         font-size: 14px;
     }
 }
-/* @media screen and (min-width:320px) and (max-width: 360px) {
-    .technologies__content {
-        max-width: 200px;
-    }
-} */
-
-

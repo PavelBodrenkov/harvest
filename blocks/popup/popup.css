@@ -281,12 +281,11 @@
     }
     .span {
         margin-left: 0;
-    margin-bottom: -13px;
-    order: 2;
-    width: 300px;
-    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    font-size: 15px;
-    align-self: center;
+        margin-bottom: 24px;
+        order: 2;
+        width:300px;
+        font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+        font-size: 15px;
     }
 
     .popup__button-send {
@@ -321,13 +320,5 @@
     .correctly{
         background-position:243px;
     }
-    .button-wrapper {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 0;
-        align-items: center;
-        min-height: 107px;
-    }
-
 }
 
