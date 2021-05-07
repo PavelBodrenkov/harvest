@@ -165,13 +165,11 @@ position: relative;
         height: 412px;
         display: none;  
     }
-    
     .header__container {
         max-width: 443px;
         max-height: 304px;
         margin-bottom: 15px;
     }
-
     .header__content1024 {
         height: 412px;
         display: flex;
@@ -200,7 +198,6 @@ position: relative;
         left: -33px;
         z-index: 7;
     }
-
     .leaves {
         width: 90%;
         top: -26px;
@@ -224,8 +221,8 @@ position: relative;
         left: -14px;
         animation: opacity 6s forwards;
         z-index: 6;
-}
     }
+}
 
 
 @media screen and (max-width: 803px) {
@@ -240,7 +237,6 @@ position: relative;
     .header__container {
         max-width: 353px;
     }
-    
 }
 
 @media screen and (max-width: 663px) {
@@ -262,8 +258,7 @@ position: relative;
     }
     .header__container {
         max-width: 300px;
-    }
-    
+    } 
 }
 
 @media screen and (max-width: 557px) {
@@ -278,12 +273,17 @@ position: relative;
         top: -21px;
         left: -35px;
         z-index: 7;
-}
+    }
 }
 
 
 
 @media screen and (max-width: 414px) {
+    .img-logo414 {
+        width: 100%;
+        height:auto;
+        object-fit: cover;
+    }
     .header__content1024 {
         display: none;
     }
@@ -292,7 +292,6 @@ position: relative;
         align-items: flex-end;
         height:220px;
     }
-   
     .header__container {
         max-width: 241px;
         margin-bottom: 4px;
@@ -339,27 +338,26 @@ position: relative;
         top: 243px;
         left: 305px;
     }
-    }
+}
   
 
 @media screen and (max-width: 360px) {
-   
     .header__content414 {
         display: none;
+    }
+    .img-logo360 {
+        width: 100%;
+        height:auto;
+        object-fit: cover;
     }
     .header__content {
         height:223px;
         display: none;
     }
-    .header__logo{
-        background: url('../../images/logo360.svg') center no-repeat;
-        height: 164px; 
-    }    
     .header__container {
         max-width: 241px;
         margin-bottom: 4px;
     }
-
     .header__content360 {
         display: initial;
         height:223px;
@@ -383,7 +381,6 @@ position: relative;
         left: -20px;
         width: 122%;
     }
-
     .leaves {
         top: -15px;
         left: 39px;
@@ -394,7 +391,6 @@ position: relative;
         left: 34px;
         width: 89%;
     }
-
     .tomato {
         top: -22px;
         left: -2px;
@@ -412,7 +408,6 @@ position: relative;
         width: 111%;
         top: 243px;
         left: -60px;
-        z-index: 2;
-        
+        z-index: 2; 
     }
 }
