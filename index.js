@@ -23,6 +23,10 @@ var swiper = new Swiper(".swiper-container", {
   slidesPerView: 5,
   spaceBetween: 5,
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
     360: {
       slidesPerView: 2,
       spaceBetween: 10,

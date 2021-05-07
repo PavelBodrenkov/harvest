@@ -97,8 +97,14 @@
     .footer__list br {
         display: initial;
     }
-    
 }
+
+@media screen and (max-width:414px) {
+    .footer__content {
+        justify-content: flex-end;
+    }
+}
+
 @media screen and (max-width:360px) {
     .footer__list:last-of-type {
         margin-right: 0;

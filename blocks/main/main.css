@@ -16,12 +16,14 @@
 }
 
 .riktangle {
-position: relative;
-    /* background: url('./../../images/Rectangle519.svg'); */
+    position: relative;
     overflow: hidden;
     -webkit-clip-path: polygon(36.5% 0%, 100% 26%, 229% 23%, 57% 99.5%, -1% 80.5%, 0% 26%);
-clip-path: polygon(36.5% 0%, 100% 26%, 229% 23%, 57% 99.5%, -1% 80.5%, 0% 26%)
-    
+    clip-path: polygon(36.5% 0%, 100% 26%, 229% 23%, 57% 99.5%, -1% 80.5%, 0% 26%)
+}
+
+.riktangle414 {
+    display: none;
 }
 
 .words {
@@ -33,108 +35,28 @@ clip-path: polygon(36.5% 0%, 100% 26%, 229% 23%, 57% 99.5%, -1% 80.5%, 0% 26%)
     transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 1828px) {
-    .main-bg {
-      height:1450px;
+@media screen and (max-width: 414px) {
+    .riktangle {
+        display: none;
     }
-}
-@media screen and (max-width: 1704px) {
-    .main-bg {
-      height:1390px;
+    .riktangle414 {
+        display: initial;
     }
-}
-@media screen and (max-width: 1662px) {
-    .main-bg {
-      height:1320px;
-    }
-}
-@media screen and (max-width: 1579px) {
-    .main-bg {
-      height:1250px;
+    
+    .img-main414 {
+        width: 100%;
+        height: auto;
     }
 }
 
-@media screen and (max-width: 1440px) {
-    .main-bg {
-        background: url('./../../images/mainbg1440.svg') center no-repeat;
-        height:1130px;
-    }
-}
-@media screen and (max-width: 1286px) {
-    .main-bg {
-        background: url('./../../images/mainbg1286.svg') center no-repeat;
-        height:1009px;
-    }
-}
-@media screen and (max-width: 1083px) {
-    .main-bg {
-        background: url('./../../images/mainbg1083.svg') center no-repeat;
-        height:850px;
-    }
-}
-@media screen and (max-width: 1024px) {
-    .main-bg {
-        background: url('./../../images/mainbg1024.svg') center no-repeat;
-        height:804px;
-    }
-}
-@media screen and (max-width: 984px) {
-    .main-bg {
-        background: url('./../../images/mainbg984.svg') center no-repeat;
-        height:773px;
-    }
-}
-@media screen and (max-width: 897px) {
-    .main-bg {
-        background: url('./../../images/mainbg897.svg') center no-repeat;
-        height:705px;
-    }
-}
-@media screen and (max-width: 824px) {
-    .main-bg {
-        background: url('./../../images/mainbg815.svg') center no-repeat;
-        height:639px;
-    }
-}
-@media screen and (max-width: 741px) {
-    .main-bg {
-        background: url('./../../images/mainbg720.svg') center no-repeat;
-        height:639px; 
-    }
-}
-@media screen and (max-width: 662px) {
-    .main-bg {
-        background: url('./../../images/mainbg658.svg') center no-repeat;
-        height:516px; 
-    }
-}
-@media screen and (max-width: 562px) {
-    .main-bg {
-        background: url('./../../images/mainbg559.svg') center no-repeat;
-        height:438px; 
-    }
-}
-@media screen and (max-width: 494px) {
-    .main-bg {
-        background: url('./../../images/mainbg489.svg') center no-repeat;
-        height:383px; 
-    }
-}
-@media screen and (max-width: 424px) {
-    .main-bg {
-        background: url('./../../images/mainbg420.svg') center no-repeat;
-        height:329px; 
-    }
-}
 @media screen and (max-width: 360px) {
-    /* .main-bg {
-        background: url('./../../images/mainbg360.svg') center no-repeat;
-        height:595px; 
-    } */
     .img360 {
         display: initial;
     }
     .img-main {
+        display: none;
+    }
+    .riktangle414 {
         display: none;
     }
 }
