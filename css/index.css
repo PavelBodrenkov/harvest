@@ -19,6 +19,7 @@ html {
 body {
     overflow-x: hidden;
     background-color: #EEEEEE;
+    font-family: "Roboto Condenced", sans-serif;
 }
 
 .container {
