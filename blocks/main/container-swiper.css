@@ -17,9 +17,9 @@
         position: absolute;
         bottom: 0;
         width: 100%;
-        background: #D7D7D7;
+        background: #E2E2E2;
         border-radius: 5px;
-        height: 3px;
+        height: 2px;
     }
 
     .swiper-slide {
@@ -32,8 +32,12 @@
     }
 
     .swiper-container {
-        max-width:890px;
+        max-width:855px;
         margin: 0 auto;
+        width: 91%;
+        height: 100%;
+        position: relative;
+        display: flex;
 
     }
 
@@ -43,7 +47,7 @@
         height: 20px;
         background-size: contain;
         cursor: pointer;
-        margin-right: 30px;
+        /* margin-right: 30px; */
     }
     
     .slider__right {
@@ -55,13 +59,6 @@
         margin-left: 0px;
         text-align: end;
     } 
-
-    .swiper-container {
-        width: 89%;
-        height: 100%;
-        position: relative;
-        display: flex;
-    }
 
     .swiper-object {
         display: flex;
@@ -85,14 +82,12 @@
 
 @media screen and (max-width: 991px) {
     .swiper-container {
-        max-width: 600px; 
+        max-width: 600px;
+        width: 73%;
       }
 }
 @media screen and (max-width: 652px) {
-    .swiper-container {
-        max-width: 450px;
-      }
-      .slider__left {
+       .slider__left {
           display: none;
       }
       .slider__right{
@@ -102,6 +97,7 @@
 @media screen and (max-width: 652px) {
     .swiper-container {
         max-width: 350px;
+        width: 88%;
     }
 }
 @media screen and (max-width: 360px) {

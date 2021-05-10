@@ -29,9 +29,9 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: #D7D7D7;
+    background: #E2E2E2;
     border-radius: 5px;
-    height: 3px;
+    height: 2px;
 }
 
 @media screen and (max-width: 1440px) {

@@ -47,7 +47,7 @@ position: relative;
     z-index: 7;
  }
 .p3 {
-    animation: opacity 6s forwards;
+    animation: opacity 3s forwards;
     z-index: 4;
     top: -109px;
     width: 97.3%;
@@ -107,7 +107,7 @@ position: relative;
         z-index: 7;
      }
     .p3 {
-        animation: opacity 6s forwards;
+        animation: opacity 3s forwards;
         z-index: 4;
         top: -72px;
         width: 97.3%;
@@ -202,7 +202,7 @@ position: relative;
         width: 94%;
         top: -31px;
         left: -14px;
-        animation: opacity 6s forwards;
+        animation: opacity 3s forwards;
         z-index: 6;
     }
 }
@@ -320,7 +320,7 @@ position: relative;
         width: 112%;
         top: -27px;
         left: 5px;
-        animation: opacity 6s forwards;
+        animation: opacity 3s forwards;
     }
     .bigblur{
         width: 68px;
@@ -390,7 +390,7 @@ position: relative;
         top: -20px;
         left: -2.8px;
         width: 108%;
-        animation: opacity 6s forwards;
+        animation: opacity 3s forwards;
         z-index: 2;
     }
     .berroes-bigblur {

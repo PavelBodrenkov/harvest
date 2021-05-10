@@ -33,9 +33,13 @@ var swiper = new Swiper(".swiper-container", {
     },
     655: {
       slidesPerView: 3,
-      spaceBetween: 10,
+      spaceBetween: 5,
     },
     995: {
+      slidesPerView: 5,
+      spaceBetween: 5,
+    },
+    1024: {
       slidesPerView: 5,
       spaceBetween: 5,
     }
@@ -103,9 +107,9 @@ function submitForm (e) {
 function dataCheck() {
   let name
   let error
- for (let i = 0; i < req.length; i++) {
-   name = req[i].value;
-   error = req[i]
+  for (let i = 0; i < req.length; i++) {
+    name = req[i].value;
+    error = req[i]
        if(name !=='') {
          span.style.display ='none'
          error.classList.remove('_error')
