@@ -4,10 +4,11 @@ const closeButtonPopup = document.querySelector('.popup__button-close');
 const Esc = 27;
 const input = document.querySelectorAll('.popup__input');
 const form = document.querySelector('.form');
-const span = document.querySelector('.span')
-const popupDoneContainer = document.querySelector('.popup__done__container')
-const req = document.querySelectorAll('._req')
-const reqtheme = document.querySelector('._reqtheme')
+const span = document.querySelector('.span');
+const popupDoneContainer = document.querySelector('.popup__done__container');
+const req = document.querySelectorAll('._req');
+const reqtheme = document.querySelector('._reqtheme');
+
 // parallax
 if (screen.width > 1280) {
   parallaxMouse({ elements: '.p1', moveFactor: 1, wrap: '.header'})
@@ -24,7 +25,7 @@ var swiper = new Swiper(".swiper-container", {
   spaceBetween: 5,
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 0,
     },
     360: {
@@ -59,7 +60,7 @@ var swiper = new Swiper(".swiper-container", {
 
 //Открыть попап
 function openPopup () {
-  popup.classList.add('popup__opened')
+  popup.classList.add('popup__opened');
   input.forEach(item => {
       item.classList.remove('_error')
       item.classList.remove('correctly')   
@@ -68,7 +69,7 @@ function openPopup () {
 
 //Зкрыть попап
 function closePopup () {
-  popup.classList.remove('popup__opened')
+  popup.classList.remove('popup__opened');
   form.reset()
 }
 
@@ -90,7 +91,7 @@ function closeEsc (e) {
 
 //Отправить форму
 function submitForm (e) {
-  e.preventDefault()
+  e.preventDefault();
   let hasError = false
    req.forEach(item => {
     if(item.value === "") {
