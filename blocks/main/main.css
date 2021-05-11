@@ -42,10 +42,17 @@
     }
     .riktangle414 {
         display: initial;
+        overflow: hidden;
+       
     }
     .img-main414 {
+       
         width: 100%;
+      
         height: auto;
+        -webkit-clip-path: polygon(36.5% 0%, 100% 26%, 229% 23%, 57% 99.5%, -1% 80.5%, 0% 26%);
+        clip-path: polygon(37.5% 0%, 100% 12%, 228% 66%, 56% 99.5%, 0% 90.5%, 0% 12%);
+        
     }
 }
 
